@@ -14,7 +14,10 @@ function display(value) {
 }
 
 function del(){
-    result.value -= result;
+
+    var aux = result.value.substring(0, result.value.length - 1);
+
+    result.value = aux;
 }
 
 function calculate() {
