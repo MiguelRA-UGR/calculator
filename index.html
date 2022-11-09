@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>
+  Calculator
+</title>
+<link type="text/css" href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <table class="calculator">
+    <tr>
+      <td colspan="3"> <input type="text" id="result" disabled /> </td>
+      <td><button id="clear" onclick="clearScreen()">C</button></td>
+    </tr>
+    <tr>
+      <td><button id="one" onclick="display('1')">1</button></td>
+      <td><button id="two" onclick="display('2')">2</button></td>
+      <td><button id="three" onclick="display('3')">3</button></td>
+      <td><button id="division" onclick="display('/')">/</button></td>
+    </tr>
+
+    <tr>
+      <td><button id="four" onclick="display('4')">4</button></td>
+      <td><button id="five" onclick="display('5')">5</button></td>
+      <td><button id="six" onclick="display('6')">6</button></td>
+      <td><button id="product" onclick="display('*')">*</button></td>
+    </tr>
+
+    <tr>
+      <td><button id="seven" onclick="display('7')">7</button></td>
+      <td><button id="eight" onclick="display('8')">8</button></td>
+      <td><button id="nine" onclick="display('9')">9</button></td>
+      <td><button id="add" onclick="display('+')">+</button></td>
+    </tr>
+
+    <tr>
+      <td><button id="equals" onclick="calculate()">=</button></td>
+      <td><button id="zero" onclick="display('0')">0</button></td>
+      <td colspan="2"><button id="delete" onclick="del()">Delete</button></td>
+    </tr>
+
+  </table>
+
+  <script src="script.js"></script>
+</body>
+
+</head>
+</html>

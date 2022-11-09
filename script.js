@@ -1,16 +1,24 @@
-// This function clear all the values
+
+var result = document.getElementById("result");
+
 function clearScreen() {
-    document.getElementById("result").value = "";
+    result.value = "";
 }
  
-// This function display values
 function display(value) {
-    document.getElementById("result").value += value;
+
+    if(result.value == "Nan" || result.value == "Infinity")
+        clearScreen();
+
+    result.value += value;
 }
- 
-// This function evaluates the expression and returns result
+
+function del(){
+    result.value -= result;
+}
+
 function calculate() {
-    var p = document.getElementById("result").value;
+    var p = result.value;
     var q = eval(p);
-    document.getElementById("result").value = q;
+    result.value = q;
 }
