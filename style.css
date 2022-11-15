@@ -10,6 +10,7 @@
 
 .calculator{
     display:flex;
+    border-color: black;
     margin:0 auto;
     margin-top: 2cm;
     padding: 30px;
